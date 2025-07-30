@@ -20,12 +20,12 @@ public class Car
     public void MakeHonkNoise(string honkNoise)
     {
         HonkNoise = honkNoise;
-        Console.WriteLine($"The {Make} {Model} has an engine noise that sounds like a {HonkNoise}.");
+        Console.WriteLine($"The {Make} {Model} has an horn noise that sounds like a {HonkNoise}.");
     }
 
     public Car()
     {
-        
+        CarLot.NumberOfCars++;
     }
 
     public Car(int year, string make, string model, bool isDriveable)
@@ -34,5 +34,6 @@ public class Car
         Make = make;
         Model = model;
         IsDriveable = isDriveable;
+        CarLot.NumberOfCars++;
     }
 }

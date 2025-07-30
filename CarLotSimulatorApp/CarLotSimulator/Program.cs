@@ -34,6 +34,7 @@ namespace CarLotSimulator
             carOne.MakeHonkNoise("CHAWOOGAH");
             
             carLotOne.ParkingLot.Add(carOne);
+            Console.WriteLine($"The Current Number of Cars on the lot is: {CarLot.NumberOfCars}");
 
             var carTwo = new Car()
             {
@@ -47,6 +48,7 @@ namespace CarLotSimulator
             
             carTwo.MakeEngineNoise("vacuum");
             carTwo.MakeHonkNoise("clown car");
+            Console.WriteLine($"The Current Number of Cars on the lot is: {CarLot.NumberOfCars}");
 
             var carThree = new Car(2020, "Hyundai", "Elantra", true);
             
@@ -54,6 +56,7 @@ namespace CarLotSimulator
             carThree.MakeHonkNoise("beep beep");
             
             carLotOne.ParkingLot.Add(carThree);
+            Console.WriteLine($"The Current Number of Cars on the lot is: {CarLot.NumberOfCars}");
 
             //*************BONUS X 2*************//
 
